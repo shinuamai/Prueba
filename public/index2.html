@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contract</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>
+                Welcome User!
+            </h1>
+            <form name="usr" autocomplete="off">
+                <div class="userField">
+                    <input id="url" class="textField" type="text" placeholder="Address Contract">
+                    <input id="number" class="textField" type="text" placeholder="Number Contract">
+                </div>
+                <br><br>
+                <button type="button" class="btn-send" onclick="contract('contractsend'); save();">
+                    <a href="#">Show</a>
+                </button>
+            </form>
+        </div>
+        <div id="contractsend" class="table" >
+            <h1>Contract</h1>
+            <table>
+                
+                    <tr>
+                        <td>Identification</td>
+                        <td id="ide"></td>
+                    </tr>
+                    <tr>
+                        <td>Payment</td>
+                        <td id="data"></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td id="status"></td>
+                    </tr>
+                    <tbody id="body">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="assets/js/script2.js"></script>
+</body>
+
+</html>
